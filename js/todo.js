@@ -47,14 +47,8 @@ toDoForm.addEventListener("submit", handleToDoSubmit)
 
 const savedToDos = localStorage.getItem(TODOS_KEY)
 
-console.log(savedToDos)
 if(savedToDos !== null){
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos
   parsedToDos.forEach(paintToDo);
 }
-
-function sexyFilter(){
-
-}
-[1,2,3,4].filter(sexyFilter)
